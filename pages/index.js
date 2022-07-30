@@ -74,22 +74,22 @@ export default function Home() {
           Completed self-teach information technology basic and army reserve course for 4 months.
         </BioSection>
         <BioSection>
-          <BioYear>2021</BioYear>
+          <BioYear>May 04 2021</BioYear>
           Worked at Sieu Viet human resource joint stock company.
         </BioSection>
         <BioSection>
-          <BioYear>Aug 2021 to present</BioYear>
-          Working at CMC global company.
+          <BioYear>Aug 01 2021 to present</BioYear>
+          Working at Vidiva joint stock company.
         </BioSection>
       </Section>
       <Section delay={0.5}>
         <Heading as="h3" color={"red.500"} variant={"section-title"}>Interests &#10084;</Heading>
         <Paragraph>
-          Music (Joji, Weeknd,...), scenery picture, rowing on perfume river (my home town), work out,
-          <Link href={"https://www.instagram.com/_ntp.897_/"}> Photography, </Link>
+          Music (Joji, Weeknd, Coldplay...), scenery picture, rowing on perfume river (my home town), work out,
+          <Link href={"https://www.instagram.com/_ntp.897_/"} target="_blank"> Photography, </Link>
           Algorithms on
-          <Link href='https://www.hackerrank.com/'> hackerrank</Link>,
-          <Link href='https://www.codingame.com/'> Coding game</Link> and learn new technology for work.
+          <Link href='https://www.hackerrank.com/' target="_blank"> hackerrank</Link>,
+          <Link href='https://www.codingame.com/' target="_blank"> Coding game</Link> and learn new technology for work.
         </Paragraph>
       </Section>
     </Container>
