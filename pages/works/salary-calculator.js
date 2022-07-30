@@ -31,9 +31,9 @@ const SalaryCalculatorDescription = () => {
                         <span>Tailwind, HeadlessUi, React-hook-form, css</span>
                     </ListItem>
                 </List>
-                <WorkImage alt={"image 1"} src="/images/projects/salary-project1.png" />
-                <WorkImage alt={"image 2"} src="/images/projects/salary-project2.png" />
-                <WorkImage alt={"image 3"} src="/images/projects/salary-project3.png" />
+                {Array(5).fill('/images/projects').map((e, idx) => (
+                    <WorkImage key={idx} alt={`image ${idx + 1}`} src={`${e}/salary/prj-${idx + 1}.png`} />
+                ))}
             </Container>
         </Layout>
     );

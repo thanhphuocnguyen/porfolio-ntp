@@ -6,11 +6,11 @@ export const Title = ({ children }) => {
     return (
         <Box>
             <NextLink href="/works">
-                <Link>Works</Link>
+                <Link fontSize={18} fontWeight={600}>Works</Link>
             </NextLink>
             <span>
                 &nbsp;
-                <ChevronRightIcon />
+                <ChevronRightIcon w={25} h={25} mb={1} />
                 &nbsp;
             </span>
             <Heading display={'inline-block'} as="h3" fontSize={20} mb={4}>
@@ -21,8 +21,8 @@ export const Title = ({ children }) => {
     )
 }
 
-export const WorkImage = ({ src, alt }) => (
-    <Image borderRadius={"lg"} w="full" src={src} alt={alt} mb={4} />
+export const WorkImage = ({ src, alt, key }) => (
+    <Image key={key} borderRadius={"lg"} w="full" src={src} alt={alt} mb={4} />
 )
 
 export const Meta = ({ children }) => (

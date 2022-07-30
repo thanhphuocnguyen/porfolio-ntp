@@ -5,23 +5,23 @@ import Layout from '../../components/article';
 import Paragraph from '../../components/custom-dom/paragraph';
 import { Meta, Title, WorkImage } from '../../components/work';
 
-const CompanyProject3 = () => {
+const BookStore = () => {
     return (
-        <Layout title="Salary calculator">
+        <Layout title="Book shop">
             <Container minW={"container.md"}>
-                <Title>
-                    Build UI new service package for employer easy to find candidates.
-                    <Badge>2022</Badge>
+                <Title>Build a MVC NodeJs Project online bookshop
+                    <Badge>2021</Badge>
                 </Title>
                 <Paragraph>
-                    Employers have bought this package can see suitable candidates suggested by main websites. They can accept or refuse or insurance the suggested candidate.
-                    Help them manage, control, visualize candidate they have contacted or accepted and the service they have bought
+                    User with admin role can sell books through create/update description of books. User can see book in many pages,
+                    order books,
+                    and charge for the order through stripe. At last they can print invoices in orders history.
                 </Paragraph>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="https:/ntd.vieclam24h.vn/nha-tuyen-dung/ho_tro_tim_kiem_ung_vien.html">
-                            https://vieclam24h.vn/nha-tuyen-dung/ho_tro_tim_kiem_ung_vien.html
+                        <Link href="#">
+                            Not deployed yet
                             <ExternalLinkIcon mx={2} />
                         </Link>
                     </ListItem>
@@ -31,19 +31,24 @@ const CompanyProject3 = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>NodeJs, ReactJs, NextJs</span>
+                        <span>NodeJs, Ejs, ExpressJs, Mongo, MySql</span>
+                    </ListItem>
+                    <ListItem>
+                        <Meta>Libraries</Meta>
+                        <span>Stripe, Jwt, Bscript(hash password), PDFKit, Node-mailer, sendgrid,
+                            expressjs libs (validator), multer, Mongoose, Sequelized,...</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Styles</Meta>
-                        <span>Tailwind, HeadlessUi, React-hook-form, css</span>
+                        <span>css, html of ejs</span>
                     </ListItem>
                 </List>
-                {Array(5).fill(null).map((e, idx) => (
-                    <WorkImage key={idx} alt={`image ${idx + 1}`} src={`/images/projects/recruiter/prj-${idx + 1}.png`} />
+                {Array(9).fill(null).map((e, idx) => (
+                    <WorkImage key={idx} alt={`image ${idx + 1}`} src={`/images/projects/bookshop/prj-${idx + 1}.png`} />
                 ))}
             </Container>
         </Layout>
     );
 };
 
-export default CompanyProject3;
+export default BookStore;

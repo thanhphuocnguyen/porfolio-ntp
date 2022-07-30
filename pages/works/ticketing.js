@@ -5,20 +5,20 @@ import Layout from '../../components/article';
 import Paragraph from '../../components/custom-dom/paragraph';
 import { Meta, Title, WorkImage } from '../../components/work';
 
-const CompanyProject1 = () => {
+const TicketSale = () => {
     return (
         <Layout title="Salary calculator">
             <Container minW={"container.md"}>
-                <Title>Build UI new version main website of SieuViet Company <Badge>2021</Badge></Title>
+                <Title>Social network website <Badge>2022</Badge></Title>
                 <Paragraph>
-                    One of biggest recruiter website help user find new jobs in VietNam. using ReactJs, NextJs, and Tailwind UI, using PHP Phantom Platform backend.
-                    With many sections, animate, guideline users and some suggestion for user to find new jobs.
+                    A MERN app using microservices manage with Docker, K8S and Skaffold. Functions are splitted out with many services.
+                    Writing with Typescript.
                 </Paragraph>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="https://vieclam24h.vn">
-                            https://vieclam24h.vn
+                        <Link href="#">
+                            Not deployed yet
                             <ExternalLinkIcon mx={2} />
                         </Link>
                     </ListItem>
@@ -28,19 +28,24 @@ const CompanyProject1 = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>NodeJs, ReactJs, NextJs</span>
+                        <span>NodeJs, ReactJs, NextJs, ExpressJs, Docker, Mongodb, K8S, NATS message broker, Redis - Bull queue.</span>
+                    </ListItem>
+                    <ListItem>
+                        <Meta>Libraries</Meta>
+                        <span>Stripe, Jwt, Bscript(hash password), npm libs self published, expressjs libs (validator),
+                            Mongoose,...</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Styles</Meta>
-                        <span>Tailwind, HeadlessUi, React-hook-form, css, npm libraries...</span>
+                        <span>Bootstraps, css...</span>
                     </ListItem>
                 </List>
-                {Array(5).fill(null).map((e, idx) => (
-                    <WorkImage key={idx} alt={`image ${idx + 1}`} src={`/images/projects/seeker/prj-${idx + 1}.png`} />
+                {Array(10).fill('/images/projects').map((e, idx) => (
+                    <WorkImage key={idx} alt={`image ${idx + 1}`} src={`${e}/ticket-sale/prj-${idx + 1}.png`} />
                 ))}
             </Container>
         </Layout>
     );
 };
 
-export default CompanyProject1;
+export default TicketSale;

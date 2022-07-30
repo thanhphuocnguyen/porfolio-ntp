@@ -34,15 +34,9 @@ const StepResume = () => {
                         <span>Tailwind, HeadlessUi, React-hook-form, css</span>
                     </ListItem>
                 </List>
-                <WorkImage alt={"image 1"} src="/images/projects/step-resume-project1.png" />
-                <WorkImage alt={"image 2"} src="/images/projects/step-resume-project2.png" />
-                <WorkImage alt={"image 3"} src="/images/projects/step-resume-project3.png" />
-                <WorkImage alt={"image 4"} src="/images/projects/step-resume-project4.png" />
-                <WorkImage alt={"image 5"} src="/images/projects/step-resume-project5.png" />
-                <WorkImage alt={"image 6"} src="/images/projects/step-resume-project6.png" />
-                <WorkImage alt={"image 7"} src="/images/projects/step-resume-project7.png" />
-                <WorkImage alt={"image 8"} src="/images/projects/step-resume-project8.png" />
-                <WorkImage alt={"image 9"} src="/images/projects/step-resume-project9.png" />
+                {Array(9).fill('/images/projects').map((e, idx) => (
+                    <WorkImage key={idx} alt={`image ${idx + 1}`} src={`${e}/resume/prj-${idx + 1}.png`} />
+                ))}
             </Container>
         </Layout>
     );
