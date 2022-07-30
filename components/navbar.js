@@ -42,7 +42,7 @@ const NavBar = (props) => {
                     mt={{ base: 4, md: 1 }}
                 >
                     <LinkItem href={"/works"} path={path}>Works</LinkItem>
-                    <LinkItem href={"/posts"} path={path}>Posts</LinkItem>
+                    <LinkItem href={"/detail-skill"} path={path}>Skill detail</LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
                     <ThemeToggleBtn />
@@ -61,8 +61,8 @@ const NavBar = (props) => {
                                 <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
-                                <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
+                                <NextLink href="/detail-skill" passHref>
+                                    <MenuItem as={Link}>Skill detail</MenuItem>
                                 </NextLink>
                             </MenuList>
                         </Menu>

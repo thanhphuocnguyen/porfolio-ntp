@@ -40,6 +40,7 @@ const VotexDog = () => {
                 antialias: true,
                 alpha: true
             })
+
             renderer.setPixelRatio(window.devicePixelRatio)
             renderer.setSize(scW, scH)
             renderer.outputEncoding = THREE.sRGBEncoding

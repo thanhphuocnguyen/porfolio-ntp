@@ -19,7 +19,6 @@ const Works = () => {
                 <Heading as={"h3"} fontSize={25} mb={4}>Works</Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section delay={0.1}>
-
                         <WorkGridItem id={"company-project-2"} title="Recruiter website" thumbnail={thumbCompanyProduct2} >
                             And web page for helping recruiter seek for candidate.
                         </WorkGridItem>
