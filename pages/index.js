@@ -1,6 +1,6 @@
 import { Box, Button, Center, Container, Heading, Image, Link, useColorModeValue } from '@chakra-ui/react'
 import Paragraph from '../components/custom-dom/paragraph'
-import Section from '../components/custom-dom/section'
+import SectionY from '../components/custom-dom/section'
 // import Head from 'next/head'
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link'
@@ -32,7 +32,7 @@ export default function Home() {
           />
         </Box>
       </Box>
-      <Section delay={0.1}>
+      <SectionY delay={0.1}>
         <Heading as={"h3"} variant="section-title">
           Work
         </Heading>
@@ -56,8 +56,8 @@ export default function Home() {
             </NextLink>
           </Box>
         </Center>
-      </Section>
-      <Section delay={0.3}>
+      </SectionY>
+      <SectionY delay={0.3}>
         <Heading as="h3" variant={'section-title'}>
           Biography
         </Heading>
@@ -81,8 +81,8 @@ export default function Home() {
           <BioYear>Aug 01 2021 to present</BioYear>
           Working at Vidiva joint stock company.
         </BioSection>
-      </Section>
-      <Section delay={0.5}>
+      </SectionY>
+      <SectionY delay={0.5}>
         <Heading as="h3" color={"red.500"} variant={"section-title"}>Interests &#10084;</Heading>
         <Paragraph>
           Music (Joji, Weeknd, Coldplay...), scenery picture, rowing on perfume river (my home town), work out,
@@ -91,7 +91,7 @@ export default function Home() {
           <Link href='https://www.hackerrank.com/' target="_blank"> hackerrank</Link>,
           <Link href='https://www.codingame.com/' target="_blank"> Coding game</Link> and learn new technology for work.
         </Paragraph>
-      </Section>
+      </SectionY>
     </Container>
   )
 }
