@@ -10,7 +10,7 @@ const LinkItem = ({ href, path, children }) => {
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha')
     return (
         <NextLink href={href} passHref>
-            <Link marginY={"auto"} fontWeight={600} p={2} bg={active ? 'glassTeal' : undefined} color={active ? "#202023" : inactiveColor}>
+            <Link marginY={"auto"} rounded="md" fontWeight={600} p={2} bg={active ? 'glassTeal' : undefined} color={active ? "#202023" : inactiveColor}>
                 {children}
             </Link>
         </NextLink>
@@ -18,7 +18,7 @@ const LinkItem = ({ href, path, children }) => {
 }
 
 const NavBar = (props) => {
-    const { path } = props
+    const { path } = props;
     return (
         <Box
             position={'fixed'}
