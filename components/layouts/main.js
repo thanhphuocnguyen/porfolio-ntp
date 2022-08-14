@@ -1,9 +1,13 @@
 import { Box, Container } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
+import dynamic from 'next/dynamic'
 import NavBar from "../navbar";
-import NoSsr from "../no-ssr";
-import VotexDog from "../votex-dog";
+import VoxelDogLoader from '../votex-dog-loader'
+const LazyVoxelDog = dynamic(() => import('../votex-dog'), {
+  ssr: false,
+  loading: () => <VoxelDogLoader />
+})
 
 const MainLayout = ({ children, router }) => {
   return (
@@ -14,9 +18,7 @@ const MainLayout = ({ children, router }) => {
       </Head>
       <NavBar path={router.asPath} />
       <Container maxWidth={"container.md"} pt={20}>
-        <NoSsr>
-          <VotexDog />
-        </NoSsr>
+        <LazyVoxelDog />
         {children}
       </Container>
     </Box>
